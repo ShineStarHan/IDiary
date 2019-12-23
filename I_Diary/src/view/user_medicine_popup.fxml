@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title6.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button id="btnExit" fx:id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="닫 기">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="230.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label text="학부모 메인 &gt; 투약의뢰서 &gt; 내용보기">
+         <VBox.margin>
+            <Insets left="50.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <AnchorPane prefHeight="497.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="51.0" layoutY="48.0" text="보낸사람 :  " />
+            <TextField id="txtName" editable="false" layoutX="134.0" layoutY="46.0" prefHeight="29.0" prefWidth="154.0" />
+            <TextField id="txtCapacity" fx:id="txtCapacity" editable="false" layoutX="135.0" layoutY="136.0" prefHeight="29.0" prefWidth="154.0" />
+            <Label layoutX="50.0" layoutY="94.0" text="투약 시간 :  " />
+            <Label layoutX="50.0" layoutY="140.0" text="투약 용량 :  " />
+            <TextField id="txtTime" fx:id="txtTime" editable="false" layoutX="135.0" layoutY="91.0" prefHeight="29.0" prefWidth="154.0" />
+            <Label layoutX="50.0" layoutY="185.0" text="보관 방법 :  " />
+            <Label layoutX="50.0" layoutY="248.0" text="기타 참고 사항" />
+            <TextArea id="txtAreaRef" fx:id="txtRef" editable="false" layoutX="50.0" layoutY="274.0" prefHeight="128.0" prefWidth="500.0" />
+            <TextField id="txtKeep" fx:id="txtCapacity1" editable="false" layoutX="134.0" layoutY="180.0" prefHeight="29.0" prefWidth="154.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

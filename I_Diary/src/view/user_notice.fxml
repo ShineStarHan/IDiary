@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserNoticeController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="M A I N">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="410.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label text="학부모 메인 &gt; 공지사항">
+         <VBox.margin>
+            <Insets left="50.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TableView id="tableView" fx:id="tableView" prefHeight="441.0" prefWidth="700.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="번호" />
+            <TableColumn prefWidth="494.0" text="제목" />
+            <TableColumn prefWidth="130.0" text="날짜" />
+        </columns>
+         <VBox.margin>
+            <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+         </VBox.margin>
+      </TableView>
+      <AnchorPane prefHeight="50.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="52.0" layoutY="31.0" text="* 공지사항은 매주 금요일 출력하여 가정으로 보내드리오니 확인해 주시길 바랍니다." />
+            <Label layoutX="52.0" layoutY="2.0" text="* 목록을 더블클릭 하시면 내용을 보실 수 있습니다." />
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

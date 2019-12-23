@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminNoticeController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="M A I N">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="410.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label text="선생님 메인 &gt; 공지사항">
+         <VBox.margin>
+            <Insets left="50.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TableView fx:id="tableView" prefHeight="405.0" prefWidth="700.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="번호" />
+            <TableColumn prefWidth="494.0" text="제목" />
+            <TableColumn prefWidth="130.0" text="날짜" />
+         </columns>
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" top="20.0" />
+         </VBox.margin>
+      </TableView>
+      <AnchorPane prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="49.0" layoutY="17.0" text="* 추가 : 추가를 원하시면 추가 버튼을 눌러 주세요." />
+            <Button fx:id="btnAdd" layoutX="585.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  추가  " />
+            <Button fx:id="btnRemove" layoutX="681.0" layoutY="4.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  삭제  " />
+            <Label layoutX="49.0" layoutY="66.0" text="* 삭제 : 목록을 선택하신 후 삭제 버튼을 누르면 목록을 삭제하실 수 있습니다." />
+            <Label layoutX="49.0" layoutY="41.0" text="* 수정 : 목록을 더블클릭 하시면 내용을 수정하실 수 있습니다." />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </AnchorPane>
+   </children>
+</VBox>

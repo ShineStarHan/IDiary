@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminSettingController">
+   <children>
+      <VBox prefHeight="700.0" prefWidth="800.0">
+         <children>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </Separator>
+            <Label text="선생님 메인 &gt; 설정">
+               <VBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </VBox.margin>
+            </Label>
+            <TabPane prefHeight="491.0" prefWidth="700.0" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab text="  개인정보 설정  ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="314.0" prefWidth="800.0" style="-fx-border-color: lightgray;">
+                           <children>
+                              <Label layoutX="84.0" layoutY="137.0" text="아이디 :  " />
+                              <TextField fx:id="txtId" editable="false" layoutX="150.0" layoutY="132.0" />
+                              <Label layoutX="372.0" layoutY="136.0" text="선생님 이름 :  " />
+                              <TextField fx:id="txtName" layoutX="473.0" layoutY="132.0" />
+                              <Label layoutX="70.0" layoutY="197.0" text="비밀번호 :  " />
+                              <PasswordField fx:id="txtPassword" layoutX="150.0" layoutY="192.0" />
+                              <Label layoutX="397.0" layoutY="197.0" text="반 이름 :  " />
+                              <ComboBox fx:id="cbClass" layoutX="473.0" layoutY="192.0" prefHeight="29.0" prefWidth="172.0" promptText="선택해 주세요." />
+                              <Label layoutX="35.0" layoutY="256.0" text="비밀번호 확인 :  " />
+                              <Button fx:id="btnPrivateSave" layoutX="546.0" layoutY="292.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  저장하기  " />
+                              <PasswordField fx:id="txtPasswordCheck" layoutX="150.0" layoutY="251.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="  프로필 사진 설정  ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-border-color: lightgray;">
+                           <children>
+                              <Button fx:id="btnSelectFile" layoutX="245.0" layoutY="350.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  프로필 사진 선택 &amp; 저장  " />
+                              <Pane layoutX="244.0" layoutY="105.0" maxHeight="210.0" maxWidth="210.0" prefHeight="210.0" prefWidth="210.0" style="-fx-border-color: pink;">
+                                 <children>
+                                    <ImageView id="imageView" fx:id="imageView" fitHeight="200.0" fitWidth="200.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="  원아 정보 설정  ">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-border-color: lightgray;">
+                           <children>
+                              <Button fx:id="btnRemove" layoutX="603.0" layoutY="405.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  삭제  " />
+                              <Button fx:id="btnEdit" layoutX="506.0" layoutY="405.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  추가  " />
+                              <TableView fx:id="tableView" prefHeight="360.0" prefWidth="700.0">
+                                 <columns>
+                                    <TableColumn prefWidth="110.0" text="이름 (아이디)" />
+                                    <TableColumn prefWidth="150.0" text="생년월일 (비밀번호)" />
+                                    <TableColumn text="반" />
+                                    <TableColumn prefWidth="40.0" text="성별" />
+                                    <TableColumn text="부모님" />
+                                    <TableColumn prefWidth="130.0" text="연락처" />
+                                    <TableColumn prefWidth="110.0" text="주소" />
+                                 </columns>
+                              </TableView>
+                              <Button fx:id="btnSearch" layoutX="219.0" layoutY="405.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  검색  " />
+                              <TextField fx:id="txtSearch" layoutX="26.0" layoutY="405.0" promptText="이름으로 검색하기" />
+                              <Label layoutX="26.0" layoutY="372.0" text="* 추가 또는 수정을 원하시면 목록을 클릭한 후 설정 버튼을 눌러 주세요." />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+               <VBox.margin>
+                  <Insets left="50.0" right="50.0" top="10.0" />
+               </VBox.margin>
+            </TabPane>
+         </children>
+      </VBox>
+      <HBox prefHeight="63.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title8.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="M A I N">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="410.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

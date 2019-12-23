@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="550.0" prefWidth="650.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title8.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button id="btnExit" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="  닫 기  ">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="250.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label text="설정 &gt; 선생님 설정 &gt; 원아 정보 설정 &gt; 정보 설정">
+         <VBox.margin>
+            <Insets bottom="10.0" left="50.0" right="50.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label text="원아 이름 :  ">
+               <HBox.margin>
+                  <Insets left="25.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="txtChildrenName" promptText="원아 이름 입력" />
+            <Label text="* 원아 이름은 아이디로 사용됩니다.">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="10.0" top="40.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label prefHeight="19.0" prefWidth="79.0" text="생년월일 :  ">
+               <HBox.margin>
+                  <Insets left="15.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="txtBirthday" promptText="생년월일 입력">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></TextField>
+            <Label text="* 생년월일은 비밀번호로 사용됩니다.">
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="24.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label text="반 :  ">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox id="cbClass" prefHeight="29.0" prefWidth="170.0" promptText="선택해 주세요." />
+            <Label text="성별 :  ">
+               <HBox.margin>
+                  <Insets left="85.0" />
+               </HBox.margin>
+            </Label>
+            <ComboBox id="cbGender" prefHeight="29.0" prefWidth="170.0" promptText="선택해 주세요." />
+         </children>
+         <VBox.margin>
+            <Insets bottom="20.0" left="38.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <VBox.margin>
+            <Insets bottom="20.0" left="35.0" />
+         </VBox.margin>
+         <children>
+            <Label text="부모님 :  ">
+               <HBox.margin>
+                  <Insets left="23.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="txtParentName" promptText="부모님 성함 입력" />
+            <Label text="연락처 :  ">
+               <HBox.margin>
+                  <Insets left="68.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="txtPhone" promptText="ex) 010-0000-0000" />
+         </children>
+      </HBox>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <Label text="주소 :  ">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="txtAddress" prefHeight="29.0" prefWidth="479.0" promptText="주소 입력" />
+         </children>
+         <VBox.margin>
+            <Insets left="22.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox prefHeight="64.0" prefWidth="800.0">
+         <children>
+            <Button id="btnAdd" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  추가  ">
+               <HBox.margin>
+                  <Insets left="430.0" right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button id="btnEdit" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  수정  " />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

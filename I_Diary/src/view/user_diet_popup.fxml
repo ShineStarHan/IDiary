@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="880.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="49.0" prefWidth="800.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title5.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="20.0" right="20.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="M A I N">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="410.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <AnchorPane prefHeight="802.0" prefWidth="800.0">
+         <children>
+            <ImageView id="imageView" fitHeight="741.0" fitWidth="745.0" layoutX="28.0" layoutY="-2.0" />
+            <Label layoutX="102.0" layoutY="754.0" text="* 위의 식단은 시장여건과 급식실 상황에 따라 같은 식품군으로 대체될 수 있습니다. " />
+            <Label layoutX="102.0" layoutY="728.0" text="* 식단표는 매달 마지막 주 금요일에 업데이트 됩니다." />
+            <Label layoutX="54.0" layoutY="5.0" text="학부모 메인 &gt; 식단표" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

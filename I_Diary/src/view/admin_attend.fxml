@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminAttendController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title7.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="M A I N">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="410.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <AnchorPane prefHeight="601.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="54.0" layoutY="12.0" text="선생님 메인 &gt; 출석부" />
+            <Button fx:id="btnPieChart" layoutX="473.0" layoutY="152.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="212.0" text="원아 월별 출석률" />
+            <ComboBox fx:id="cbMonth" layoutX="472.0" layoutY="59.0" prefHeight="29.0" prefWidth="147.0" promptText="월 선택" />
+            <TableView fx:id="tableView" layoutX="74.0" layoutY="59.0" maxWidth="470.0" prefHeight="434.0" prefWidth="371.0">
+               <columns>
+                  <TableColumn prefWidth="50.0" text="월" />
+                  <TableColumn text="이름" />
+                  <TableColumn text="출석 일수" />
+                  <TableColumn text="결석 일수" />
+                  <TableColumn text="조퇴 일수" />
+               </columns>
+            </TableView>
+            <Button fx:id="btnBarChart" layoutX="473.0" layoutY="192.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="212.0" text="전체원아 월별 출석률" />
+            <Label layoutX="69.0" layoutY="545.0" text="* 수정을 원하시면 목록을 선택하고 수정을 완료하신 후 수정 버튼을 눌러 주세요." />
+            <Button fx:id="btnView" layoutX="635.0" layoutY="59.0" mnemonicParsing="false" text="보기" />
+            <TextField fx:id="txtSearch" layoutX="472.0" layoutY="101.0" prefHeight="29.0" prefWidth="147.0" promptText="이름으로 검색" />
+            <Button fx:id="btnSearch" layoutX="635.0" layoutY="101.0" mnemonicParsing="false" text="검색" />
+            <Separator layoutX="462.0" layoutY="142.0" prefHeight="3.0" prefWidth="246.0" />
+            <Label layoutX="69.0" layoutY="517.0" text="* 월을 선택한 후 원하시는 출석률 버튼을 누르시면 차트를 보실 수 있습니다." />
+            <Pane layoutX="462.0" layoutY="231.0" prefHeight="263.0" prefWidth="246.0" style="-fx-border-color: lightgray;">
+               <children>
+                  <Label layoutX="22.0" layoutY="58.0" text="이름 :  " />
+                  <Label layoutX="22.0" layoutY="97.0" text="출석 :  " />
+                  <Label layoutX="23.0" layoutY="139.0" text="결석 :  " />
+                  <Button fx:id="btnEdit" layoutX="95.0" layoutY="219.0" mnemonicParsing="false" text=" 수정 " />
+                  <Button fx:id="btnRemove" layoutX="169.0" layoutY="219.0" mnemonicParsing="false" text=" 삭제 " />
+                  <Label layoutX="22.0" layoutY="179.0" text="조퇴 :  " />
+                  <TextField fx:id="txtAttend" layoutX="76.0" layoutY="95.0" prefHeight="29.0" prefWidth="147.0" />
+                  <TextField fx:id="txtAbsent" layoutX="76.0" layoutY="136.0" prefHeight="29.0" prefWidth="147.0" />
+                  <TextField fx:id="txtEarly" layoutX="76.0" layoutY="176.0" prefHeight="29.0" prefWidth="147.0" />
+                  <Button fx:id="btnAdd" layoutX="19.0" layoutY="219.0" mnemonicParsing="false" text=" 추가 " />
+                  <Label layoutX="37.0" layoutY="20.0" text="월 :  " />
+                  <ComboBox fx:id="cbName" layoutX="76.0" layoutY="55.0" prefHeight="29.0" prefWidth="147.0" promptText="이름 선택" />
+                  <ComboBox fx:id="cbMonthEdit" layoutX="76.0" layoutY="15.0" prefHeight="29.0" prefWidth="147.0" promptText="월 선택" />
+               </children>
+            </Pane>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

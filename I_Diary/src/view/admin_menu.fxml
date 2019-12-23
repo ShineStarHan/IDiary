@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminMenuController">
+   <children>
+      <ImageView fitHeight="69.0" fitWidth="209.0" layoutX="285.0" layoutY="146.0">
+         <image>
+            <Image url="/image/gtitle.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="profileImageView" fitHeight="150.0" fitWidth="150.0" layoutX="89.0" layoutY="156.0" preserveRatio="true" />
+      <HBox alignment="CENTER" layoutX="35.0" layoutY="383.0" prefHeight="130.0" prefWidth="730.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnNotice" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="공지사항" />
+            <Button fx:id="btnInform" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="알림장" />
+            <Button fx:id="btnAlbum" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="앨범" />
+            <Button fx:id="btnSchedule" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="일정표" />
+         </children>
+      </HBox>
+      <Separator layoutY="357.0" prefHeight="11.0" prefWidth="800.0" />
+      <HBox alignment="CENTER" layoutX="35.0" layoutY="526.0" prefHeight="130.0" prefWidth="730.0" spacing="30.0">
+         <children>
+            <Button fx:id="btnDiet" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="식단표" />
+            <Button fx:id="btnMedicine" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="투약의뢰서" />
+            <Button fx:id="btnAttend" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="출석부" />
+            <Button fx:id="btnSetting" mnemonicParsing="false" prefHeight="80.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="설정" />
+         </children>
+      </HBox>
+      <Button fx:id="btnMain" layoutX="667.0" layoutY="18.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="나 가 기" />
+      <Label layoutX="53.0" layoutY="95.0" text="로그인 &gt; 선생님 메인" />
+      <Label layoutX="285.0" layoutY="231.0" text="반 :  " />
+      <Label layoutX="270.0" layoutY="275.0" text="이름 :  " />
+      <TextField fx:id="txtClass" editable="false" layoutX="319.0" layoutY="226.0" />
+      <TextField fx:id="txtName" editable="false" layoutX="319.0" layoutY="270.0" />
+      <ImageView fitHeight="62.0" fitWidth="204.0" layoutX="35.0" layoutY="14.0">
+         <image>
+            <Image url="/image/login2.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="6.0" layoutY="79.0" prefHeight="11.0" prefWidth="800.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminMedicineController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title6.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button id="btnMain" fx:id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="M A I N">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="410.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label text="선생님 메인 &gt; 투약의뢰서">
+         <VBox.margin>
+            <Insets left="50.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TableView id="tableView" fx:id="tableView" prefHeight="461.0" prefWidth="700.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="번호" />
+            <TableColumn prefWidth="156.0" text="보낸 사람" />
+            <TableColumn minWidth="0.0" prefWidth="336.0" text="기타 참고 사항" />
+            <TableColumn prefWidth="132.0" text="날짜" />
+         </columns>
+         <VBox.margin>
+            <Insets bottom="20.0" left="50.0" right="50.0" top="20.0" />
+         </VBox.margin>
+      </TableView>
+      <Label text="* 목록을 더블클릭 하시면 내용을 보실 수 있습니다.">
+         <VBox.margin>
+            <Insets left="50.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+</VBox>

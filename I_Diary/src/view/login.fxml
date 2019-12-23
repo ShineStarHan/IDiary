@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="800.0" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../Java_Study/java_test/I_Diary/src/image/login.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="txtPassword" layoutX="322.0" layoutY="376.0" promptText="원아 생년월일 입력" />
+      <TextField fx:id="txtId" layoutX="322.0" layoutY="322.0" promptText="원아 이름 입력" />
+      <Label layoutX="256.0" layoutY="327.0" text="아이디 :  " />
+      <Label layoutX="242.0" layoutY="381.0" text="비밀번호 :  " />
+      <Separator layoutY="147.0" prefHeight="19.0" prefWidth="800.0" />
+      <ComboBox fx:id="cbUser" layoutX="322.0" layoutY="267.0" prefHeight="29.0" prefWidth="172.0" promptText="사용자 유형 선택" />
+      <Button fx:id="btnLogin" layoutX="315.0" layoutY="427.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  로그인  " />
+      <Button fx:id="btnExit" layoutX="415.0" layoutY="427.0" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  나가기  " />
+      <Label layoutX="361.0" layoutY="282.0" />
+      <ImageView fitHeight="94.0" fitWidth="364.0" layoutX="229.0" layoutY="165.0">
+         <image>
+            <Image url="/image/login3.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnRegist" layoutX="672.0" layoutY="27.0" mnemonicParsing="false" text="선생님 등록" />
+      <ImageView fitHeight="87.0" fitWidth="260.0" layoutX="278.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="/image/login2.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnSearchPassword" layoutX="607.0" layoutY="69.0" mnemonicParsing="false" text="학부모 비밀번호 찾기" />
+      <Button fx:id="btnSearchAdmin" layoutX="576.0" layoutY="111.0" mnemonicParsing="false" text="선생님 ID / 비밀번호 찾기" />
+   </children>
+</AnchorPane>

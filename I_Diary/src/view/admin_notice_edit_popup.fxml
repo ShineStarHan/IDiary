@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title1.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <Label text="선생님 메인 &gt; 공지사항 &gt; 공지사항 수정">
+         <VBox.margin>
+            <Insets left="50.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <HBox prefHeight="50.0" prefWidth="600.0">
+         <children>
+            <Label text="제목 :  ">
+               <HBox.margin>
+                  <Insets left="50.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <TextField id="txtTitle" prefHeight="29.0" prefWidth="648.0">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </TextField>
+         </children>
+         <VBox.margin>
+            <Insets top="40.0" />
+         </VBox.margin>
+      </HBox>
+      <Label text="내용 : ">
+         <VBox.margin>
+            <Insets bottom="10.0" left="50.0" />
+         </VBox.margin>
+      </Label>
+      <TextArea id="txtAreaContents" prefHeight="360.0" prefWidth="700.0">
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin>
+      </TextArea>
+      <HBox prefHeight="40.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button id="btnEdit" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  수정  " />
+            <Button id="btnCancel" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  취소  " />
+         </children>
+         <VBox.margin>
+            <Insets left="590.0" top="30.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>

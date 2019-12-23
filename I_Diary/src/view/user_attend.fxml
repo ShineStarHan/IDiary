@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserAttendController">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="66.0" fitWidth="200.0">
+               <image>
+                  <Image url="/image/title7.png" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="20.0" />
+               </HBox.margin>
+            </ImageView>
+            <Button fx:id="btnMain" mnemonicParsing="false" prefHeight="50.0" prefWidth="100.0" style="-fx-background-radius: 20;" text="M A I N">
+               <HBox.margin>
+                  <Insets bottom="20.0" left="410.0" right="20.0" top="30.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <AnchorPane prefHeight="83.0" prefWidth="800.0">
+         <children>
+            <Label layoutX="54.0" layoutY="12.0" text="학부모 메인 &gt; 출석부" />
+            <PieChart fx:id="pieChart" layoutX="444.0" layoutY="127.0" prefHeight="300.0" prefWidth="300.0" />
+            <Button fx:id="btnPieChart" layoutX="450.0" layoutY="59.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="147.0" text="월별 출석률" />
+            <TableView fx:id="tableView" layoutX="52.0" layoutY="59.0" maxWidth="-Infinity" prefHeight="465.0" prefWidth="371.0">
+               <columns>
+                  <TableColumn prefWidth="50.0" text="월" />
+                  <TableColumn text="이름" />
+                  <TableColumn text="출석 일수" />
+                  <TableColumn text="결석 일수" />
+                  <TableColumn text="조퇴 일수" />
+               </columns>
+            </TableView>
+            <Separator layoutX="444.0" layoutY="103.0" prefHeight="13.0" prefWidth="300.0" />
+            <Label layoutX="442.0" layoutY="441.0" text="* 목록을 선택하고 월별 출석률 버튼을 누르시면" />
+            <Label layoutX="442.0" layoutY="464.0" text="  차트를 보실 수 있습니다." />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

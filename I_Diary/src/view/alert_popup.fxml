@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox prefHeight="50.0" prefWidth="200.0">
+         <children>
+            <ImageView fitHeight="67.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Java_Study/java_test/I_Diary/bin/image/alert_rabbit.PNG" />
+               </image>
+               <HBox.margin>
+                  <Insets bottom="10.0" left="20.0" top="10.0" />
+               </HBox.margin>
+            </ImageView>
+            <Label text="삭제 경고!">
+               <HBox.margin>
+                  <Insets left="30.0" top="40.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <Separator prefWidth="200.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="정말 삭제하시겠어요?">
+               <HBox.margin>
+                  <Insets left="70.0" top="10.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <Button id="btnYes" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  YES  " />
+            <Button id="btnNo" mnemonicParsing="false" style="-fx-background-radius: 20;" text="  NO  " />
+         </children>
+         <VBox.margin>
+            <Insets left="80.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
